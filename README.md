@@ -44,7 +44,9 @@ net start "Dev World Server (managed by AlwaysUpService)"
 
 ## Precompiled HeadlessExporter
 
-There is a precompiled binary in this repository. You will need to edit the `config.xml` and get the Binding files from the Spell Editor repository. The `SpellEditor.exe` provided in this should not be used because it is an old version. I just never needed to update it since I compiled the `HeadlessExporter` a long time ago and it uses it as a reference for the DBC converting API.
+There is a precompiled binary in this repository. You will need to edit the `config.xml` and get the Binding files from the Spell Editor repository. The `SpellEditor.exe` provided in this should not be used because it is an old version and only used as a reference by the `HeadlessExporter`. I just never needed to update it since I compiled the `HeadlessExporter` a long time ago.
+
+It supports MySQL and MariaDB connection types.
 
 ## Example Queries
 ### Regenerate Item.dbc
