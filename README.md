@@ -44,7 +44,7 @@ net start "Dev World Server (managed by AlwaysUpService)"
 
 ## Precompiled HeadlessExporter
 
-There is a precompiled binary in this repository. You will need to edit the `config.xml` and get the Binding files from the Spell Editor repository. The `SpellEditor.exe` provided in this should not be used because it is an old version and only used as a reference by the `HeadlessExporter`. I just never needed to update it since I compiled the `HeadlessExporter` a long time ago.
+The compiled version of the HeadlessExporter now comes with the [Spell Editor](https://github.com/stoneharry/WoW-Spell-Editor/releases), as of v2.1.0. It reads the spell editors `config.xml` file to connect to the configured MySQL server and exports all tables that you have imported.
 
 It supports MySQL and MariaDB connection types.
 
