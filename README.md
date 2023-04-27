@@ -63,5 +63,4 @@ REPLACE INTO new_dbc.item
 
 ![Jenkins Build List](https://i.imgur.com/D1FgsmG.png)
 ![Data in MySQL](https://i.imgur.com/82V2IxE.png)
-![Export Example 1](https://i.imgur.com/ZBtiSMe.png)
-![Export Example 2](https://i.imgur.com/HfNhZop.png)
+![Export Example](https://i.imgur.com/pSLS33x.png)
