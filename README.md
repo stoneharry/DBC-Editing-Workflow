@@ -1,7 +1,7 @@
 # DBC Editing Workflow
 ## Overview
 
-The DBC file format does not lend itself to being edited directly very well. I would much rather have all the data stored in a SQL format so that we can perform queries and other operations on the data with ease. I am pretty sure that Blizzard will also have their data stored in another format and only convert it to DBC when it needs to be packaged.
+The DBC file format does not lend itself to being edited directly very well. I would much rather have all the data stored in a SQL format so that I can perform queries and other operations on the data with ease. Blizzard stores their data in Oracle DB and only converts it into DBC when it needs to be packaged.
 
 When I was working on the [Spell Editor](https://github.com/stoneharry/WoW-Spell-Editor) I ended up writing code to convert DBC files to and from SQL with the use of text file 'Bindings' that define what the structure is for each DBC file. The program allows you to import and export any DBC file that you have a binding for. Using this functionality I was able to write a simple commnand line program called [HeadlessExporter](https://github.com/stoneharry/WoW-Spell-Editor/blob/master/HeadlessExport/Program.cs) that automatically connects to the database and exports all the Bindings to DBC files.
 
@@ -53,9 +53,9 @@ It supports MySQL and MariaDB connection types.
 
 You can regenerate your Item DBC from your server `item_template` data with one simple query. For example, for my TrinityCore world DB:
 ```sql
-REPLACE INTO new_dbc.item
+REPLACE INTO dbc.item
     SELECT entry, class, subclass, soundoverridesubclass, Material, displayid, InventoryType, sheath
-    FROM new_world.item_template;
+    FROM world.item_template;
     -- WHERE entry BETWEEN 1 and 100; -- You could add a condition or just regenerate everything
 ```
 
